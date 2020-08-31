@@ -1,7 +1,7 @@
 # Calendar
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_calendar/)
-    - [TEST REPORT LINK](https://<your_account>.github.io/layout_calendar/report/html_report/)
+    - [DEMO LINK](https://zkhomer.github.io/layout_calendar/)
+    - [TEST REPORT LINK](https://zkhomer.github.io/layout_calendar/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
     - Write styles in `src/styles/main.scss` instead of `src/style.css`.
     - This task does not have tests so you need to check if it works as expected manually.
@@ -38,7 +38,7 @@ Display a calendar in the middle of the screen. The HTML of the calendar needs t
 - The hovered cell has to become pink
   - (**Optional**) Move it up by `20px`.
   - (**Optional**) both of these properties are to be animated with the duration of half a second.
-  
+
 --> [CHECKLIST](https://github.com/mate-academy/layout_snake/blob/master/checklist.md)
 
 ## Here is a preview:
