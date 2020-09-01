@@ -1,4 +1,4 @@
-$box-size: 100px;
+$boxSize: 100px;
 $fSize: 30px;
 $_indent: 1px;
 $days: ("mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat":5, "sun":6);
@@ -19,23 +19,23 @@ body {
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  max-width: ($box-size + $_indent) * 7;
+  max-width: ($boxSize + $_indent) * 7;
 
   > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: $box-size;
-    height: $box-size;
+    width: $boxSize;
+    height: $boxSize;
     border: 1px solid #000;
     background-color: #eee;
     margin-right: $_indent;
     margin-bottom: $_indent;
     font-size: $fSize;
+    transition: 0.5s ease;
     &:hover {
       background-color: pink;
       transform: translateY(-20px);
-      transition: 0.5s ease;
     }
   }
 }
@@ -48,7 +48,7 @@ body {
 
 @each $day, $order in $days {
   .calendar-#{$day} > div:first-child {
-    margin-left: $order * ($box-size + $_indent);
+    margin-left: $order * ($boxSize + $_indent);
   }
 }
 
