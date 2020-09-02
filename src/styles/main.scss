@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: ($boxSize + $_indent) * 7;
+  margin-top: 25px;
 
   > div {
     display: flex;
@@ -32,8 +33,9 @@ body {
     margin-right: $_indent;
     margin-bottom: $_indent;
     font-size: $fSize;
-    transition: 0.5s ease;
+    transition: transform 0.5s;
     &:hover {
+      cursor: pointer;
       background-color: pink;
       transform: translateY(-20px);
     }
