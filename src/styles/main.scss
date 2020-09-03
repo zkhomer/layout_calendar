@@ -1,6 +1,7 @@
 $boxSize: 100px;
 $fSize: 30px;
 $_indent: 1px;
+$daysCount: 7;
 $days: ("mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat":5, "sun":6);
 
 * {
@@ -19,7 +20,7 @@ body {
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  max-width: ($boxSize + $_indent) * 7;
+  max-width: ($boxSize + $_indent) * $daysCount;
   margin-top: 25px;
 
   > div {
